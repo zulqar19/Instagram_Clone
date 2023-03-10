@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+    color: white;
+    height: 100%;
+    overflow: hidden;
+}
+/* Distributing the content sides */
+.grid-container{
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr 2fr
+}
+/* starting the left side styling */
+.left-side{
+    border-right: 1px solid #343434;
+}
+/* styling the instagram logo */
+.logo{
+    max-width: 10vw;
+    margin: 2vw;
+}
+/* styling the nav */
+.left-side nav{
+    width: 100%;
+    height: 80vh;
+    margin-left: 3vw;
+    position: relative;
+}
+/* removing the dots of the ul */
+ul{
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.8vw;
+}
+
+.left-side ul li{
+    padding: .8vw 0vw;
+}
+/* adjusting the profile img  */
+.img-profile{
+    width: 1.8vw;
+    height: 5vh;
+    border-radius: 50%;
+}
+/* Seperating the content from the icon */
+.padding-left{
+    padding-left: 2vw;
+}
+/* seperating "more" from the rest */
+.bottom{
+    position: absolute;
+    bottom: 0;
+}
+/* Starting the middle section styling */
+.middle-section{
+    text-align: right;
+}
+/* setting the starting point */
+.top-stories-section{
+    position: relative;
+    float: right;
+    margin: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name{
+    font-size: .7vw;
+    text-align: center;
+}
+/* Adjusting the size of the stories */
+.stories{
+    width: 4vw;
+    height: auto;
+    border-radius: 50%;
+    padding: .3vw;
+    margin: .3vw;
+    /* border: .2vw solid #feda75 #fa7e1e #d62976 #962fbf #4f5bd5; */
+    border: .2vw solid #feda75;
+    border-color:  #fa7e1e #d62976 #962fbf #4f5bd5;
+}
+/* styling the arrow */
+.fa-greater-than{
+    background-color: #ffffff;
+    color: #000000;
+    padding: .2vw;
+    border-radius: 1vw 1vw 1vw 1vw;
+    position: absolute;
+    right: 1vw;
+    top: 2vw;
+    font-size: 1vw;
+}
+/* styling the post section */
+.main-post-section{
+    clear: right;
+    margin: 2.5vw;
+    height: 100vh;
+}
+/* creating the area for the post */
+.area{
+    width: 28vw;
+    margin-left: 20vw;
+    position: relative;
+    margin-bottom: 2vw;
+}
+.post-image-profile{
+    width: 1.8vw;
+    height: auto;
+    border-radius: 50%;
+    float: left;
+}
+.details{
+    text-align: left;
+    font-size: 1vw;
+    margin-left: 3vw;
+}
+/* styling the bullets  */
+.main-post-section ul{
+    list-style : none
+}
+.main-post-section ul li::before {
+    content: "\2022";
+    color: #ffffff; 
+    font-weight: bold;
+    padding: .3vw;
+}
+/* setting the time */
+.main-post-section ul li{
+    font-size: 1vw;
+    position: absolute;
+    top: .05vw;
+    left: 9vw;
+    color: grey;
+}
+.small-size{
+    font-size: .8vw;
+    text-align: left;
+    margin-left: 3vw;
+    padding-top: .2vw;
+}
+/* setting the threee dots */
+.fa-ellipsis{
+    position: absolute;
+    top: .5vw;
+    right: .5vw;
+    font-size: 1vw;
+}
+/* setting the main image */
+.post-image{
+    padding-top: 1vw;
+    width: 100%;
+    height: 35vh;
+}
+/* setting the like section */
+.post-lower-part{
+    text-align: left;
+}
+.post-lower-part .fa-bookmark{
+    float: right;
+}
+.post-lower-part .fa-bookmark,.fa-comment,.fa-heart,.fa-share-nodes{
+    font-size: 1.4vw;
+}
+.post-lower-part .fa-heart{
+    color: red;
+}
+.post-lower-part .padding-left{
+    padding-left: 1vw;
+    padding-bottom: 1vw;
+}
+.padding-bottom{
+    padding-bottom: .6vw;
+    font-size: 1vw;
+}
+.fa-face-smile{
+    float: right;
+}
+.post-lower-part hr{
+    border: .05vw solid #343434;
+}
+/* styling the right side content */
+.right-content{
+    width: 20vw;
+    margin-top: 2.5vw;
+    position: relative;
+    padding-bottom: 2vw;
+    margin-left: 1vw;
+    font-size: 1vw;
+}
+.profile-image{
+    width: 3.8vw;
+    height: 8vh;   
+    border-radius: 50%;
+    float: left;
+    margin-right: 1.3vw;
+}
+.shift-right{
+    float: right;
+    color: blue;
+}
+.profile-name,.profile-user-name{
+    text-align: left;
+}
+.suggestions{
+    clear: both;
+    color: grey;
+    padding-top: .8vw;
+    padding-bottom: 1vw;
+}
+.color{
+    color: white;
+}
+.suggestion-image{
+    clear: both;
+    width: 2vw;
+    height: 5vh;   
+    border-radius: 50%;
+    float: left;
+    margin-right: 1.3vw;
+    /* padding-bottom: 1vw; */
+}
+.follow-sugg{
+    padding-bottom: 1vw;
+}
+.profile-name{
+    font-size: 1vw;
+}
+.profile-user-name{
+    font-size: .8vw;
+    color: gray;
+    padding-top: .5vw;
+}
+
+/* Styling the footer */
+.footer{
+    color: #343434;
+}
+.footer ul{
+    list-style: none;
+    margin-bottom: 3vw;
+}
+.footer ul li{
+    display: inline;
+    font-size: 1.2vw;
+}
+.footer ul li::before{
+    content: "\2022";
+    color: #343434;
+    font-weight: bold;
+}
+.footer p{
+    font-size: 1.4vw;
+}
